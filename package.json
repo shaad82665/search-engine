@@ -1,0 +1,20 @@
+{
+  "name": "tasks",
+  "version": "1.0.0",
+  "description": "",
+  "main": "search.js",
+  "scripts": {
+    "search": "node search.js",
+    "batch-search": "node search.js",
+    "docker-meili": "docker run -it --rm     -p 7700:7700     -e MEILI_ENV='development'     -v $(pwd)/meili_data:/meili_data     getmeili/meilisearch:v1.3"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@opensearch-project/opensearch": "^2.3.1",
+    "algoliasearch": "^4.19.1",
+    "dotenv": "^16.3.1",
+    "meilisearch": "^0.34.1",
+    "zincsearch-sdk": "^0.3.3"
+  }
+}
