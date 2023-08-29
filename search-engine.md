@@ -5,17 +5,9 @@
 ###  OpenSearch
 
 ```sh
- cd open-search/
-```
-
-```sh
  docker-compose up
 ```
 ###  Meilisearch
-
-```sh
- cd db-seaarch-meilisearch/
-```
 
 ```sh
 # Fetch the latest version of Meilisearch image from DockerHub
