@@ -2,7 +2,7 @@ algolia/*
 data/*
 meili_data/*
 node_modules/*
-sdk-nodejs-zincsearch/*
+sdk-nodejs-zincsearch
 zinc/*
 zinc-search/*
 movies.json
