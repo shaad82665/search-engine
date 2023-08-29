@@ -53,14 +53,17 @@ e.g.
 
 ### OpenSearch
 
+movies.json file
+https://drive.google.com/file/d/1UtGX8WdnPWBQExr2KEIcNkb1C1te8Mq5/view
+
 Installation:
 https://opensearch.org/versions/opensearch-2-1-0.html
+
 Setup & Implementation:
 https://opensearch.org/docs/latest/clients/javascript/index/
 https://github.com/opensearch-project/opensearch-js/blob/HEAD/USER_GUIDE.md
 
 AWS Managed OpenSearch Service
-
 https://aws.amazon.com/opensearch-service/
 
 ### Meilisearch
