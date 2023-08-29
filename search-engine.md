@@ -51,22 +51,22 @@ e.g.
 
 ## References
 
+movies.json file
+[Download movies.json](https://drive.google.com/file/d/1UtGX8WdnPWBQExr2KEIcNkb1C1te8Mq5/view)
+
 ### OpenSearch
 
-movies.json file
-https://drive.google.com/file/d/1UtGX8WdnPWBQExr2KEIcNkb1C1te8Mq5/view
-
 Installation:
-https://opensearch.org/versions/opensearch-2-1-0.html
+[OpenSearch Installation Guide](https://opensearch.org/versions/opensearch-2-1-0.html)
 
 Setup & Implementation:
-https://opensearch.org/docs/latest/clients/javascript/index/
-https://github.com/opensearch-project/opensearch-js/blob/HEAD/USER_GUIDE.md
+[OpenSearch JavaScript Client Guide](https://opensearch.org/docs/latest/clients/javascript/index/)
+[OpenSearch JavaScript Client User Guide](https://github.com/opensearch-project/opensearch-js/blob/HEAD/USER_GUIDE.md)
 
 AWS Managed OpenSearch Service
-https://aws.amazon.com/opensearch-service/
+[AWS Managed OpenSearch Service](https://aws.amazon.com/opensearch-service/)
 
 ### Meilisearch
 
 Installation and implementation:
-https://www.meilisearch.com/docs/learn/getting_started/installation
+[Meilisearch Guide](https://www.meilisearch.com/docs/learn/getting_started/installation)
