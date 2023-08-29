@@ -32,6 +32,19 @@ docker run -it --rm \
 ```sh
  npm run search
 ```
+## Run Batch Search Script
+
+```sh
+ npm run batch-search <rounds> <batch-size>
+```
+[rounds]: number of search rounds (default: 5)
+[batch-size]: batch size (default: 200)
+e.g.
+
+```sh
+ npm run batch-search 2 200
+```
+
 ## References
 
 ### OpenSearch
