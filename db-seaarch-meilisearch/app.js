@@ -26,10 +26,10 @@ const searchOne = async (title) => {
 
 const run = async () => {
   // const res = await searchOne("m?n");
-  const res = await searchOne("hero");
+  const res = await searchOne("h?ro");
   console.log(res);
 };
-run();
+// run();
 
 const runSearch = async (hitSearchTerms, missSearchesTerms) => {
   let hitTime = 0;

@@ -1,0 +1,12 @@
+[
+  {
+    "batchSize": 200,
+    "avgOSHit": 2.365,
+    "avgMSHit": 1
+  },
+  {
+    "batchSize": 200,
+    "avgOSHit": 2.18,
+    "avgMSHit": 1.01
+  }
+]

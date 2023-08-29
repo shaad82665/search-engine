@@ -145,7 +145,7 @@ const run = async () => {
   // await deleteIndex(client, indexName);
   // runSearch(client, indexName);
 };
-run();
+// run();
 module.exports = { runSearch, indexName, client };
 
 // docker-compose up
