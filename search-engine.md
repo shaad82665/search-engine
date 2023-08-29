@@ -1,8 +1,8 @@
 # Search Engines (OpenSearch, Meilisearch)
 
-##  Setup
+## Setup
 
-###  OpenSearch
+### OpenSearch
 
 ```sh
  cd open-search/
@@ -11,12 +11,14 @@
 ```sh
  docker-compose up
 ```
-###  Meilisearch
+
+### Meilisearch
 
 ```sh
 # Fetch the latest version of Meilisearch image from DockerHub
 docker pull getmeili/meilisearch:v1.3
 ```
+
 ```sh
 # Launch Meilisearch in development mode with a master key
 docker run -it --rm \
@@ -32,11 +34,13 @@ docker run -it --rm \
 ```sh
  npm run search
 ```
-## Run Batch Search Script
+
+## Run Batch Search Script In Multiple Rounds
 
 ```sh
  npm run batch-search <rounds> <batch-size>
 ```
+
 [rounds]: number of search rounds (default: 5)
 [batch-size]: batch size (default: 200)
 e.g.
@@ -48,17 +52,18 @@ e.g.
 ## References
 
 ### OpenSearch
+
 Installation:
 https://opensearch.org/versions/opensearch-2-1-0.html
 Setup & Implementation:
 https://opensearch.org/docs/latest/clients/javascript/index/
 https://github.com/opensearch-project/opensearch-js/blob/HEAD/USER_GUIDE.md
 
-AWS Managed OpenSearch Service 
+AWS Managed OpenSearch Service
 
 https://aws.amazon.com/opensearch-service/
 
-
 ### Meilisearch
+
 Installation and implementation:
 https://www.meilisearch.com/docs/learn/getting_started/installation
