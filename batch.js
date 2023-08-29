@@ -53,7 +53,7 @@ const run = async () => {
     const batchHitSearchTerms = hitSearchTerms.slice(currentIndex, batchSize);
     // console.log(`Start: ${currentIndex} ${batchSize}`);
     // console.log(`batch size for hit search ${batchSize - currentIndex}`);
-    currentIndex += shift;
+    currentIndex += shift; // distable it for increamental batch size
     batchSize += shift;
 
     //OpenSearch
@@ -71,7 +71,7 @@ const run = async () => {
 
     //pushing data into array
     const searchResponse = {
-      batchSize: batchHitSearchTerms.length,
+      // batchSize: batchHitSearchTerms.length, // enable it for increamental batch size
       avgOSHit: osData.avgHitTime,
       avgMSHit: msData.avgHitTime,
     };
