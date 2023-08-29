@@ -5,6 +5,10 @@
 ###  OpenSearch
 
 ```sh
+ cd open-search/
+```
+
+```sh
  docker-compose up
 ```
 ###  Meilisearch
