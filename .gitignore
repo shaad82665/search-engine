@@ -9,3 +9,5 @@ movies.json
 temp.js
 open-search/opensearch-data1 
 open-search/opensearch-data2
+db-seaarch-meilisearch/archive.js
+open-search/archive.js
