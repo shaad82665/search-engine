@@ -8,7 +8,6 @@ const password = "Pass12233#";
 
 const request = async (method, data, url, absolute = false) => {
   url = !absolute ? `${baseUrl}/${url}` : url;
-  console.log("url is this", url);
   const res = await axios({
     method,
     url,

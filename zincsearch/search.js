@@ -29,4 +29,7 @@ for (let i = 0; i < titles.length; i++) {
   // console.log(data.query.term);
   run(data);
 }
-console.log("search done");
+console.log(`Searched ${titles.length} terms`);
+console.log(
+  "REQUEST curl -X GET -u <usernam>:<password> http://localhost:4080/metrics for more information"
+);
