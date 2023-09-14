@@ -49,6 +49,18 @@ e.g.
  npm run batch-search 2 200
 ```
 
+### Zinsearch
+
+```sh
+mkdir data
+```
+
+```sh
+docker run -v /Users/mohd.shadab/Desktop/Cropsly-local/zinc-search/data:/data -e ZINC_DATA_PATH="/data" -p 4080:4080 \
+    -e ZINC_FIRST_ADMIN_USER=admin -e ZINC_FIRST_ADMIN_PASSWORD=Complexpass#123 \
+-e ZINC_TELEMETRY=true -e ZINC_PROMETHEUS_ENABLE=true   --name zincsearch public.ecr.aws/zinclabs/zincsearch:latest
+```
+
 ## References
 
 movies.json file

@@ -15,3 +15,4 @@ open-search/archive.js
 zincsearch/ndJsonData/*
 zincsearch/processData.js
 zincsearch/utils.js
+zincsearch/metrics.js
