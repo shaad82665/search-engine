@@ -3,8 +3,8 @@ const btoa = require("btoa");
 
 const baseUrl = "http://localhost:4080/api";
 
-const username = "shaad";
-const password = "Pass12233#";
+const username = "admin";
+const password = "Complexpass#123";
 
 const request = async (method, data, url, absolute = false) => {
   url = !absolute ? `${baseUrl}/${url}` : url;
