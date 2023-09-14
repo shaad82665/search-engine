@@ -29,7 +29,19 @@ docker run -it --rm \
 # Use ${pwd} instead of $(pwd) in PowerShell
 ```
 
-## Run Search Script
+### Zinsearch
+
+```sh
+mkdir data
+```
+
+```sh
+docker run -v /Users/mohd.shadab/Desktop/Cropsly-local/zinc-search/data:/data -e ZINC_DATA_PATH="/data" -p 4080:4080 \
+    -e ZINC_FIRST_ADMIN_USER=admin -e ZINC_FIRST_ADMIN_PASSWORD=Complexpass#123 \
+-e ZINC_TELEMETRY=true -e ZINC_PROMETHEUS_ENABLE=true   --name zincsearch public.ecr.aws/zinclabs/zincsearch:latest
+```
+
+## Run Search Script(Meilisearch and Opensearch)
 
 ```sh
  npm run search
@@ -49,36 +61,32 @@ e.g.
  npm run batch-search 2 200
 ```
 
-### Zinsearch
+## Run Search Script(Zincsearch)
 
 ```sh
-mkdir data
-```
-
-```sh
-docker run -v /Users/mohd.shadab/Desktop/Cropsly-local/zinc-search/data:/data -e ZINC_DATA_PATH="/data" -p 4080:4080 \
-    -e ZINC_FIRST_ADMIN_USER=admin -e ZINC_FIRST_ADMIN_PASSWORD=Complexpass#123 \
--e ZINC_TELEMETRY=true -e ZINC_PROMETHEUS_ENABLE=true   --name zincsearch public.ecr.aws/zinclabs/zincsearch:latest
+ npm run zincsearch
 ```
 
 ## References
 
-movies.json file
 [Download movies.json](https://drive.google.com/file/d/1UtGX8WdnPWBQExr2KEIcNkb1C1te8Mq5/view)
+
+[Download ndjson data for zincsearch](https://drive.google.com/file/d/1u36H7buPIa-GzwjzobIVNsdskrIaZ0KF/view)
 
 ### OpenSearch
 
-Installation:
 [OpenSearch Installation Guide](https://opensearch.org/versions/opensearch-2-1-0.html)
 
-Setup & Implementation:
 [OpenSearch JavaScript Client Guide](https://opensearch.org/docs/latest/clients/javascript/index/)
 [OpenSearch JavaScript Client User Guide](https://github.com/opensearch-project/opensearch-js/blob/HEAD/USER_GUIDE.md)
 
-AWS Managed OpenSearch Service
 [AWS Managed OpenSearch Service](https://aws.amazon.com/opensearch-service/)
 
 ### Meilisearch
 
-Installation and implementation:
 [Meilisearch Guide](https://www.meilisearch.com/docs/learn/getting_started/installation)
+
+### Zincsearch
+
+[Zincsearch Docs](https://zincsearch-docs.zinc.dev/)
+[Github](https://github.com/zincsearch/zincsearch)
