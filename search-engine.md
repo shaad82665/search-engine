@@ -1,7 +1,5 @@
 # Search Engines (OpenSearch, Meilisearch and Zincsearch)
 
-## Setup
-
 ### OpenSearch
 
 ```sh
