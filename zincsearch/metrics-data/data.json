@@ -1,0 +1,584 @@
+[
+  {
+    "name": "go_gc_duration_seconds",
+    "help": "A summary of the pause duration of garbage collection cycles.",
+    "type": "SUMMARY",
+    "metrics": [
+      {
+        "quantiles": {
+          "0": "4.1966e-05",
+          "0.25": "5.9877e-05",
+          "0.5": "6.7778e-05",
+          "0.75": "8.1156e-05",
+          "1": "0.017407541"
+        },
+        "count": "4140",
+        "sum": "1.239915034"
+      }
+    ]
+  },
+  {
+    "name": "go_goroutines",
+    "help": "Number of goroutines that currently exist.",
+    "type": "GAUGE",
+    "metrics": [{ "value": "56" }]
+  },
+  {
+    "name": "go_info",
+    "help": "Information about the Go environment.",
+    "type": "GAUGE",
+    "metrics": [{ "labels": { "version": "go1.19.13" }, "value": "1" }]
+  },
+  {
+    "name": "go_memstats_alloc_bytes",
+    "help": "Number of bytes allocated and still in use.",
+    "type": "GAUGE",
+    "metrics": [{ "value": "6.4646344e+07" }]
+  },
+  {
+    "name": "go_memstats_alloc_bytes_total",
+    "help": "Total number of bytes allocated, even if freed.",
+    "type": "COUNTER",
+    "metrics": [{ "value": "8.51016224e+08" }]
+  },
+  {
+    "name": "go_memstats_buck_hash_sys_bytes",
+    "help": "Number of bytes used by the profiling bucket hash table.",
+    "type": "GAUGE",
+    "metrics": [{ "value": "1.504041e+06" }]
+  },
+  {
+    "name": "go_memstats_frees_total",
+    "help": "Total number of frees.",
+    "type": "COUNTER",
+    "metrics": [{ "value": "4.821765e+07" }]
+  },
+  {
+    "name": "go_memstats_gc_sys_bytes",
+    "help": "Number of bytes used for garbage collection system metadata.",
+    "type": "GAUGE",
+    "metrics": [{ "value": "1.7566912e+07" }]
+  },
+  {
+    "name": "go_memstats_heap_alloc_bytes",
+    "help": "Number of heap bytes allocated and still in use.",
+    "type": "GAUGE",
+    "metrics": [{ "value": "6.4646344e+07" }]
+  },
+  {
+    "name": "go_memstats_heap_idle_bytes",
+    "help": "Number of heap bytes waiting to be used.",
+    "type": "GAUGE",
+    "metrics": [{ "value": "1.0211328e+08" }]
+  },
+  {
+    "name": "go_memstats_heap_inuse_bytes",
+    "help": "Number of heap bytes that are in use.",
+    "type": "GAUGE",
+    "metrics": [{ "value": "7.7193216e+07" }]
+  },
+  {
+    "name": "go_memstats_heap_objects",
+    "help": "Number of allocated objects.",
+    "type": "GAUGE",
+    "metrics": [{ "value": "225896" }]
+  },
+  {
+    "name": "go_memstats_heap_released_bytes",
+    "help": "Number of heap bytes released to OS.",
+    "type": "GAUGE",
+    "metrics": [{ "value": "9.4486528e+07" }]
+  },
+  {
+    "name": "go_memstats_heap_sys_bytes",
+    "help": "Number of heap bytes obtained from system.",
+    "type": "GAUGE",
+    "metrics": [{ "value": "1.79306496e+08" }]
+  },
+  {
+    "name": "go_memstats_last_gc_time_seconds",
+    "help": "Number of seconds since 1970 of last garbage collection.",
+    "type": "GAUGE",
+    "metrics": [{ "value": "1.694607967350064e+09" }]
+  },
+  {
+    "name": "go_memstats_lookups_total",
+    "help": "Total number of pointer lookups.",
+    "type": "COUNTER",
+    "metrics": [{ "value": "0" }]
+  },
+  {
+    "name": "go_memstats_mallocs_total",
+    "help": "Total number of mallocs.",
+    "type": "COUNTER",
+    "metrics": [{ "value": "4.8443546e+07" }]
+  },
+  {
+    "name": "go_memstats_mcache_inuse_bytes",
+    "help": "Number of bytes in use by mcache structures.",
+    "type": "GAUGE",
+    "metrics": [{ "value": "7200" }]
+  },
+  {
+    "name": "go_memstats_mcache_sys_bytes",
+    "help": "Number of bytes used for mcache structures obtained from system.",
+    "type": "GAUGE",
+    "metrics": [{ "value": "15600" }]
+  },
+  {
+    "name": "go_memstats_mspan_inuse_bytes",
+    "help": "Number of bytes in use by mspan structures.",
+    "type": "GAUGE",
+    "metrics": [{ "value": "856800" }]
+  },
+  {
+    "name": "go_memstats_mspan_sys_bytes",
+    "help": "Number of bytes used for mspan structures obtained from system.",
+    "type": "GAUGE",
+    "metrics": [{ "value": "2.375712e+06" }]
+  },
+  {
+    "name": "go_memstats_next_gc_bytes",
+    "help": "Number of heap bytes when next garbage collection will take place.",
+    "type": "GAUGE",
+    "metrics": [{ "value": "1.29724232e+08" }]
+  },
+  {
+    "name": "go_memstats_other_sys_bytes",
+    "help": "Number of bytes used for other system allocations.",
+    "type": "GAUGE",
+    "metrics": [{ "value": "1.609775e+06" }]
+  },
+  {
+    "name": "go_memstats_stack_inuse_bytes",
+    "help": "Number of bytes in use by the stack allocator.",
+    "type": "GAUGE",
+    "metrics": [{ "value": "1.048576e+06" }]
+  },
+  {
+    "name": "go_memstats_stack_sys_bytes",
+    "help": "Number of bytes obtained from system for stack allocator.",
+    "type": "GAUGE",
+    "metrics": [{ "value": "1.048576e+06" }]
+  },
+  {
+    "name": "go_memstats_sys_bytes",
+    "help": "Number of bytes obtained from system.",
+    "type": "GAUGE",
+    "metrics": [{ "value": "2.03427112e+08" }]
+  },
+  {
+    "name": "go_threads",
+    "help": "Number of OS threads created.",
+    "type": "GAUGE",
+    "metrics": [{ "value": "12" }]
+  },
+  {
+    "name": "process_cpu_seconds_total",
+    "help": "Total user and system CPU time spent in seconds.",
+    "type": "COUNTER",
+    "metrics": [{ "value": "68.15" }]
+  },
+  {
+    "name": "process_max_fds",
+    "help": "Maximum number of open file descriptors.",
+    "type": "GAUGE",
+    "metrics": [{ "value": "1.048576e+06" }]
+  },
+  {
+    "name": "process_open_fds",
+    "help": "Number of open file descriptors.",
+    "type": "GAUGE",
+    "metrics": [{ "value": "39" }]
+  },
+  {
+    "name": "process_resident_memory_bytes",
+    "help": "Resident memory size in bytes.",
+    "type": "GAUGE",
+    "metrics": [{ "value": "1.7262592e+08" }]
+  },
+  {
+    "name": "process_start_time_seconds",
+    "help": "Start time of the process since unix epoch in seconds.",
+    "type": "GAUGE",
+    "metrics": [{ "value": "1.69460384187e+09" }]
+  },
+  {
+    "name": "process_virtual_memory_bytes",
+    "help": "Virtual memory size in bytes.",
+    "type": "GAUGE",
+    "metrics": [{ "value": "1.045823488e+09" }]
+  },
+  {
+    "name": "process_virtual_memory_max_bytes",
+    "help": "Maximum amount of virtual memory available in bytes.",
+    "type": "GAUGE",
+    "metrics": [{ "value": "1.8446744073709552e+19" }]
+  },
+  {
+    "name": "promhttp_metric_handler_requests_in_flight",
+    "help": "Current number of scrapes being served.",
+    "type": "GAUGE",
+    "metrics": [{ "value": "1" }]
+  },
+  {
+    "name": "promhttp_metric_handler_requests_total",
+    "help": "Total number of scrapes by HTTP status code.",
+    "type": "COUNTER",
+    "metrics": [
+      { "labels": { "code": "200" }, "value": "15" },
+      { "labels": { "code": "500" }, "value": "0" },
+      { "labels": { "code": "503" }, "value": "0" }
+    ]
+  },
+  {
+    "name": "zinc_request_duration_seconds",
+    "help": "The HTTP request latencies in seconds.",
+    "type": "HISTOGRAM",
+    "metrics": [
+      {
+        "labels": { "code": "200", "method": "GET", "url": "/api/index" },
+        "buckets": {
+          "0.005": "7",
+          "0.01": "7",
+          "0.025": "7",
+          "0.05": "7",
+          "0.1": "7",
+          "0.25": "7",
+          "0.5": "7",
+          "1": "7",
+          "10": "7",
+          "2.5": "7",
+          "5": "7"
+        },
+        "count": "7",
+        "sum": "0.007503034"
+      },
+      {
+        "labels": { "code": "200", "method": "GET", "url": "/api/index_name" },
+        "buckets": {
+          "0.005": "0",
+          "0.01": "1",
+          "0.025": "1",
+          "0.05": "1",
+          "0.1": "1",
+          "0.25": "1",
+          "0.5": "1",
+          "1": "1",
+          "10": "1",
+          "2.5": "1",
+          "5": "1"
+        },
+        "count": "1",
+        "sum": "0.006506266"
+      },
+      {
+        "labels": { "code": "200", "method": "GET", "url": "/ui/" },
+        "buckets": {
+          "0.005": "1",
+          "0.01": "1",
+          "0.025": "1",
+          "0.05": "1",
+          "0.1": "1",
+          "0.25": "1",
+          "0.5": "1",
+          "1": "1",
+          "10": "1",
+          "2.5": "1",
+          "5": "1"
+        },
+        "count": "1",
+        "sum": "0.00020929"
+      },
+      {
+        "labels": { "code": "200", "method": "GET", "url": "/ui/favicon.ico" },
+        "buckets": {
+          "0.005": "2",
+          "0.01": "2",
+          "0.025": "2",
+          "0.05": "2",
+          "0.1": "2",
+          "0.25": "2",
+          "0.5": "2",
+          "1": "2",
+          "10": "2",
+          "2.5": "2",
+          "5": "2"
+        },
+        "count": "2",
+        "sum": "0.000416602"
+      },
+      {
+        "labels": {
+          "code": "200",
+          "method": "POST",
+          "url": "/api/movies/_search"
+        },
+        "buckets": {
+          "0.005": "14",
+          "0.01": "17",
+          "0.025": "25",
+          "0.05": "39",
+          "0.1": "143",
+          "0.25": "458",
+          "0.5": "844",
+          "1": "1284",
+          "10": "1345",
+          "2.5": "1345",
+          "5": "1345"
+        },
+        "count": "1345",
+        "sum": "580.9054300910008"
+      },
+      {
+        "labels": {
+          "code": "200",
+          "method": "POST",
+          "url": "/api/vehicle/_search"
+        },
+        "buckets": {
+          "0.005": "0",
+          "0.01": "0",
+          "0.025": "1",
+          "0.05": "1",
+          "0.1": "1",
+          "0.25": "1",
+          "0.5": "1",
+          "1": "1",
+          "10": "1",
+          "2.5": "1",
+          "5": "1"
+        },
+        "count": "1",
+        "sum": "0.020739945"
+      },
+      {
+        "labels": {
+          "code": "200",
+          "method": "POST",
+          "url": "/es/olympics/_search"
+        },
+        "buckets": {
+          "0.005": "1",
+          "0.01": "1",
+          "0.025": "1",
+          "0.05": "1",
+          "0.1": "1",
+          "0.25": "1",
+          "0.5": "1",
+          "1": "1",
+          "10": "1",
+          "2.5": "1",
+          "5": "1"
+        },
+        "count": "1",
+        "sum": "0.00085025"
+      },
+      {
+        "labels": { "code": "302", "method": "GET", "url": "/ui/index" },
+        "buckets": {
+          "0.005": "1",
+          "0.01": "1",
+          "0.025": "1",
+          "0.05": "1",
+          "0.1": "1",
+          "0.25": "1",
+          "0.5": "1",
+          "1": "1",
+          "10": "1",
+          "2.5": "1",
+          "5": "1"
+        },
+        "count": "1",
+        "sum": "0.000101727"
+      },
+      {
+        "labels": {
+          "code": "404",
+          "method": "GET",
+          "url": "/api/index/article"
+        },
+        "buckets": {
+          "0.005": "2",
+          "0.01": "2",
+          "0.025": "2",
+          "0.05": "2",
+          "0.1": "2",
+          "0.25": "2",
+          "0.5": "2",
+          "1": "2",
+          "10": "2",
+          "2.5": "2",
+          "5": "2"
+        },
+        "count": "2",
+        "sum": "0.000139696"
+      },
+      {
+        "labels": { "code": "404", "method": "GET", "url": "/api/metrics" },
+        "buckets": {
+          "0.005": "1",
+          "0.01": "1",
+          "0.025": "1",
+          "0.05": "1",
+          "0.1": "1",
+          "0.25": "1",
+          "0.5": "1",
+          "1": "1",
+          "10": "1",
+          "2.5": "1",
+          "5": "1"
+        },
+        "count": "1",
+        "sum": "7.867e-05"
+      },
+      {
+        "labels": { "code": "404", "method": "POST", "url": "/api/metrics" },
+        "buckets": {
+          "0.005": "1",
+          "0.01": "1",
+          "0.025": "1",
+          "0.05": "1",
+          "0.1": "1",
+          "0.25": "1",
+          "0.5": "1",
+          "1": "1",
+          "10": "1",
+          "2.5": "1",
+          "5": "1"
+        },
+        "count": "1",
+        "sum": "9.5163e-05"
+      }
+    ]
+  },
+  {
+    "name": "zinc_request_size_bytes",
+    "help": "The HTTP request sizes in bytes.",
+    "type": "SUMMARY",
+    "metrics": [{ "count": "1363", "sum": "447561" }]
+  },
+  {
+    "name": "zinc_requests_total",
+    "help": "How many HTTP requests processed, partitioned by status code and HTTP method.",
+    "type": "COUNTER",
+    "metrics": [
+      {
+        "labels": {
+          "code": "200",
+          "handler": "github.com/gin-gonic/gin.(*RouterGroup).createStaticHandler.func1",
+          "host": "localhost:4080",
+          "method": "GET",
+          "url": "/ui/"
+        },
+        "value": "1"
+      },
+      {
+        "labels": {
+          "code": "200",
+          "handler": "github.com/gin-gonic/gin.(*RouterGroup).createStaticHandler.func1",
+          "host": "localhost:4080",
+          "method": "GET",
+          "url": "/ui/favicon.ico"
+        },
+        "value": "2"
+      },
+      {
+        "labels": {
+          "code": "200",
+          "handler": "github.com/zincsearch/zincsearch/pkg/handlers/index.IndexNameList",
+          "host": "localhost:4080",
+          "method": "GET",
+          "url": "/api/index_name"
+        },
+        "value": "1"
+      },
+      {
+        "labels": {
+          "code": "200",
+          "handler": "github.com/zincsearch/zincsearch/pkg/handlers/index.List",
+          "host": "localhost:4080",
+          "method": "GET",
+          "url": "/api/index"
+        },
+        "value": "7"
+      },
+      {
+        "labels": {
+          "code": "200",
+          "handler": "github.com/zincsearch/zincsearch/pkg/handlers/search.SearchDSL",
+          "host": "localhost:4080",
+          "method": "POST",
+          "url": "/es/olympics/_search"
+        },
+        "value": "1"
+      },
+      {
+        "labels": {
+          "code": "200",
+          "handler": "github.com/zincsearch/zincsearch/pkg/handlers/search.SearchV1",
+          "host": "localhost:4080",
+          "method": "POST",
+          "url": "/api/movies/_search"
+        },
+        "value": "1345"
+      },
+      {
+        "labels": {
+          "code": "200",
+          "handler": "github.com/zincsearch/zincsearch/pkg/handlers/search.SearchV1",
+          "host": "localhost:4080",
+          "method": "POST",
+          "url": "/api/vehicle/_search"
+        },
+        "value": "1"
+      },
+      {
+        "labels": {
+          "code": "302",
+          "handler": "github.com/zincsearch/zincsearch/pkg/routes.SetRoutes.func2",
+          "host": "localhost:4080",
+          "method": "GET",
+          "url": "/ui/index"
+        },
+        "value": "1"
+      },
+      {
+        "labels": {
+          "code": "404",
+          "handler": "github.com/zincsearch/zincsearch/pkg/handlers/index.Get",
+          "host": "localhost:4080",
+          "method": "GET",
+          "url": "/api/index/article"
+        },
+        "value": "2"
+      },
+      {
+        "labels": {
+          "code": "404",
+          "handler": "github.com/zincsearch/zincsearch/pkg/routes.SetRoutes.func2",
+          "host": "localhost:4080",
+          "method": "GET",
+          "url": "/api/metrics"
+        },
+        "value": "1"
+      },
+      {
+        "labels": {
+          "code": "404",
+          "handler": "github.com/zincsearch/zincsearch/pkg/routes.SetRoutes.func2",
+          "host": "localhost:4080",
+          "method": "POST",
+          "url": "/api/metrics"
+        },
+        "value": "1"
+      }
+    ]
+  },
+  {
+    "name": "zinc_response_size_bytes",
+    "help": "The HTTP response sizes in bytes.",
+    "type": "SUMMARY",
+    "metrics": [{ "count": "1363", "sum": "1.0206576e+07" }]
+  }
+]

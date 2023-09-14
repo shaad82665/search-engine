@@ -1,3 +1,4 @@
+**/.DS_Store
 algolia/*
 data/*
 meili_data/*
@@ -7,7 +8,10 @@ zinc/*
 zinc-search/*
 movies.json
 temp.js
-open-search/opensearch-data1 
+open-search/opensearch-data1
 open-search/opensearch-data2
 db-seaarch-meilisearch/archive.js
 open-search/archive.js
+zincsearch/ndJsonData/*
+zincsearch/processData.js
+zincsearch/utils.js
