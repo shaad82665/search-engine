@@ -1,4 +1,4 @@
-# Search Engines (OpenSearch, Meilisearch)
+# Search Engines (OpenSearch, Meilisearch and Zincsearch)
 
 ## Setup
 
@@ -29,18 +29,6 @@ docker run -it --rm \
 # Use ${pwd} instead of $(pwd) in PowerShell
 ```
 
-### Zinsearch
-
-```sh
-mkdir data
-```
-
-```sh
-docker run -v /Users/mohd.shadab/Desktop/Cropsly-local/zinc-search/data:/data -e ZINC_DATA_PATH="/data" -p 4080:4080 \
-    -e ZINC_FIRST_ADMIN_USER=admin -e ZINC_FIRST_ADMIN_PASSWORD=Complexpass#123 \
--e ZINC_TELEMETRY=true -e ZINC_PROMETHEUS_ENABLE=true   --name zincsearch public.ecr.aws/zinclabs/zincsearch:latest
-```
-
 ## Run Search Script(Meilisearch and Opensearch)
 
 ```sh
@@ -61,10 +49,59 @@ e.g.
  npm run batch-search 2 200
 ```
 
-## Run Search Script(Zincsearch)
+### Zinsearch
+
+##### Run zinc
+
+```sh
+mkdir data
+```
+
+```sh
+docker run -v /Users/mohd.shadab/Desktop/Cropsly-local/zinc-search/data:/data -e ZINC_DATA_PATH="/data" -p 4080:4080 \
+    -e ZINC_FIRST_ADMIN_USER=admin -e ZINC_FIRST_ADMIN_PASSWORD=Complexpass#123 \
+-e ZINC_TELEMETRY=false -e ZINC_PROMETHEUS_ENABLE=true   --name zincsearch public.ecr.aws/zinclabs/zincsearch:latest
+```
+
+##### Load existing data [download](https://drive.google.com/file/d/1u36H7buPIa-GzwjzobIVNsdskrIaZ0KF/view)
+
+```sh
+cd /path/to/ndjsonData
+```
+
+```sh
+curl http://localhost:4080/api/_bulk -i -u admin:Complexpass#123  --data-binary "@data.ndjson"
+```
+
+##### Insert real time data
+
+```sh
+curl -X PUT "http://localhost:4080/api/movies/_doc/901" -u admin:Complexpass#123 -H "Content-Type: application/json" -d '{
+  "title": "Death Not 3.0",
+  "overview": "overview",
+  "genres": ["Action", "Hentai"],
+  "poster": "https://image.tmdb.org/t/p/w500/91O7z0vo7MiNWd5xD2BoivwbQsb.jpg",
+  "release_date": 1084665600
+}'
+```
+
+##### Run Search Script(Zincsearch)
 
 ```sh
  npm run zincsearch
+```
+
+##### Search
+
+```sh
+curl -u admin:Complexpass#123 -X POST "http://localhost:4080/api/movies/_search" -H "Content-Type: application/json" -d '{
+    "search_type": "match",
+    "query": {
+        "term": "hero",
+        "field": "_all"
+    }
+}'
+
 ```
 
 ## References

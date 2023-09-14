@@ -6,8 +6,8 @@
   "scripts": {
     "search": "node search.js",
     "batch-search": "node batch.js",
-    "zincsearch": "node zincsearch/search.js",
-    "docker-meili": "docker run -it --rm     -p 7700:7700     -e MEILI_ENV='development'     -v $(pwd)/meili_data:/meili_data     getmeili/meilisearch:v1.3"
+    "docker-meili": "docker run -it --rm     -p 7700:7700     -e MEILI_ENV='development'     -v $(pwd)/meili_data:/meili_data     getmeili/meilisearch:v1.3",
+    "zincsearch": "node zincsearch/search.js"
   },
   "author": "",
   "license": "ISC",
